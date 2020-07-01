@@ -1,0 +1,121 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" />
+    <meta name="author"  />
+    <title>Chabot LIA</title>
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+    <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
+</head>
+<body class="nav-fixed sidenav-toggled">
+
+    <script>
+        var div = document.createElement('div');
+        div.className = 'fb-customerchat';
+        div.setAttribute('page_id', '105533384555367');
+        div.setAttribute('ref', '');
+        document.body.appendChild(div);
+        window.fbMessengerPlugins = window.fbMessengerPlugins || {
+            init: function () {
+                FB.init({
+                    appId: '1678638095724206',
+                    autoLogAppEvents: true,
+                    xfbml: true,
+                    version: 'v3.3'
+                });
+            }, callable: []
+        };
+        window.fbAsyncInit = window.fbAsyncInit || function () {
+            window.fbMessengerPlugins.callable.forEach(function (item) { item(); });
+            window.fbMessengerPlugins.init();
+        };
+        setTimeout(function () {
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) { return; }
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        }, 0);
+    </script>
+
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid mt-5">
+                <div class="alert alert-primary border-0 mb-4 mt-5 px-md-5">
+                    <div class="position-relative">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col position-relative">
+                                <h2 class="text-primary">Bienvenido !</h2>
+                                <p class="text-gray-700">Soy LIA, un bot de inteligencia Artificial programada por alumnos de la Universidad Peruana de Ciencias Aplicadas (UPC), mi propósito es poder brindarte información sobre las distintas carreras de Tecnologías de la Información para que tengas una mejor orientación vocacional y puedas escoger la carrera ideal para ti 😀.</p>
+                                <a class="btn btn-teal" href="#chatbot">Empezar<i class="ml-1" data-feather="arrow-right"></i></a>
+                            </div>
+                            <div class="col d-none d-md-block text-right pt-3"><img class="img-fluid mt-n5" src="~/assets/img/drawkit-content-man-alt.svg" style="max-width: 25rem;" /></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-xl-4 mb-4">
+                        <div class="card bg-dark o-visible mb-4">
+                            <div class="card-body">
+                                <h4 class="text-white">Ingeniería de Software</h4>
+                                <p class="text-white-50">Dirige proyectos de desarrollo de software en proponer soluciones en diversas plataformas y los parámetros de calidad en el proceso de vida de un proyecto software.</p>
+                                <img class="float-right" src="~/assets/img/drawkit-content-man-alt.svg" style="width: 8rem; margin-left: -2.5rem; margin-bottom: -5.5rem;" />
+                            </div>
+                            <div class="card-footer bg-transparent pt-0 border-0 text-right"></div>
+                            <div class="card-footer bg-transparent pt-0 border-0 text-right"></div>
+                            <div class="card-footer bg-transparent pt-0 border-0 text-right"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-4 mb-4">
+                        <div class="card o-visible mb-4" style="background-color: #d11300">
+                            <div class="card-body">
+                                <h4 class="text-white">Ciencias de la Computación</h4>
+                                <p class="text-white-50">Data Science, para el descubrimiento de información valiosa para los negocios, el desarrollo de sistemas complejos de seguridad de la información  y la inteligencia artificial.</p>
+                                <img class="float-right" src="~/assets/img/drawkit-charts-and-graphs.svg" style="width: 8rem; margin-left: -2.5rem; margin-bottom: -5.5rem;" />
+                            </div>
+                            <div class="card-footer bg-transparent pt-0 border-0 text-right"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-4 mb-4">
+                        <div class="card o-visible mb-4" style="background-color: #001a57">
+                            <div class="card-body">
+                                <h4 class="text-white">Ingeniería de Sistemas de Información</h4>
+                                <p class="text-white-50">La información es un recurso económico vital, difícil de procesar y de acumular. Es por ello que analizarla, sistematizarla y optimizarla de manera segura y versátil.</p>
+                                <img class="float-right" src="~/assets/img/drawkit-developer-woman.svg" style="width: 8rem; margin-left: -2.5rem; margin-bottom: -5.5rem;" />
+                            </div>
+                            <div class="card-footer bg-transparent pt-0 border-0 text-right"></div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+
+            </div>
+        </main>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="~/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="~/assets/demo/chart-area-demo.js"></script>
+    <script src="~/assets/demo/chart-bar-demo.js"></script>
+
+
+    <sb-customizer project="sb-admin-pro"></sb-customizer>
+</body>
+</html>
+
